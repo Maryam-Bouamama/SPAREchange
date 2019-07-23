@@ -51,17 +51,5 @@ body {
 </div>
 </head>
 <title>SPAREchange</title>
-  
-  <form method='get' action='[mapVolunteer.csv]'>
-<h2>Find volunteer opportunities near you...</h2>
-Enter a placename or zip code<br/><br/>
-<input type='text' name='search' value=''/>
-<input type='submit' value='Search'/>
-</form>
- 
-<script>
-function getURLParameter(name){return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null}
-var spm=getURLParameter('search');if(spm!=null){var ifms=document.getElementsByTagName('iframe');for(var ii=0;ii<ifms.length;ii++){var ifm=ifms[ii];if(ifm.getAttribute('src').indexOf('blipstar.com')!=-1)ifm.setAttribute('src',ifm.getAttribute('src')+'&search='+spm);}}
-</script>
 
 </html>
