@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://photos.smugmug.com/2018-19-Lynbrook-High-School/2018-Homecoming-Class-of-2021/i-pnkmKCT/0/669aa3c0/X2/IMG_1101-X2.jpg);
+  background-size: cover;
+width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+main {
+  max-width: 500px;
+  margin: 20px auto;
+}
+h1 {
+  color: white;
+  text-shadow: 2px 1px 10px #000000;
+}
+p {
+  color: white;
+  text-shadow: 1px 1px 10px #000000;
+}
