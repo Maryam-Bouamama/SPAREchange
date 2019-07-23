@@ -60,23 +60,28 @@ body {
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 
-<a href="#Animals"><div id="ANIMALS" class="take_meals_opt">ANIMALS</div></a>
+<a href="#Animals" ><div id="ANIMALS" class="take_meals_opt">ANIMALS</div></a>
 <a href="#Health"><div id="HEALTH" class="take_meals_opt">HEALTH</div></a>
 <a href="#Environment"><div id="ENVIRONMENT" class="take_meals_opt">ENVIRONMENT</div></a>
 
 <div class="clear"></div>
 <div class="title" style="display:none;" id="divde">Pick up datail</div>
-
+<div class="row">
+  <div class="column"></div>
+  <div class="column"></div>
+  <div class="column"></div>
+</div>
 <style>
-.take_meals_opt{
+div.take_meals_opt{
+  float: left;
+  width: 30.87%;
+  padding: 10px;
+  height: auto;
 	display:block;
-  width:150px;
-  height:150px;
   text-align: center;
   vertical-align: middle;
-  line-height: 150px;
+  line-height: 300px;
 	margin:0 10px 10px 0;
-	padding:10px 21px;
 	text-transform:uppercase;
 	font-family:'Arial';
 	font-weight:400;
@@ -86,11 +91,8 @@ body {
 	background:#53b7e8; /*#7cb289;*/
 	border-bottom:1px solid #343434;
 	transition: all 0.4s ease-in-out;
-  float: left;
 }
-
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
-
 </style>
         </a>
         </div>
@@ -128,9 +130,7 @@ body {
       transition: all 0.4s ease-in-out;
       float: left;
     }
-
     .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
-
     </style>
             </a>
             </div>
@@ -140,7 +140,7 @@ body {
     </div>
   </div>
   <hr>
-	  
+
   <ul class="w3-ul w3-hoverable w3-white">
   <li class="w3-padding-16">
     <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg" alt="Image" class="w3-left w3-margin-right" style="width:100px">
@@ -158,7 +158,6 @@ body {
     <span>Ultricies congue</span>
   </li>
   </ul>
-	
+
     </body>
-  </head>
 </html>
