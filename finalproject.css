@@ -10,19 +10,10 @@ header {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(https://photos.smugmug.com/2018-19-Lynbrook-High-School/2018-Homecoming-Class-of-2021/i-pnkmKCT/0/669aa3c0/X2/IMG_1101-X2.jpg);
-  background-size: cover;
-width: 100%;
-}
-header2 {
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
     url(https://gt20.org/wp-content/uploads/2016/09/volunteer.png);
   background-size: cover;
 width: 100%;
+}
 .title {
   position: absolute;
   top: 50%;
