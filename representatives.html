@@ -4,6 +4,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 32%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f3fa8c;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -31,13 +70,11 @@ body {
 * {
   box-sizing: border-box;
 }
-
 .column {
   float: left;
   width: 33.33%;
   padding: 5px;
 }
-
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
@@ -62,44 +99,76 @@ body {
 <h3> Do you know who represents you? Get to know them! </h3>
   <h2>Mayor and Council Staff Roster</h2>
 
+<center><h4>Mayor</h4>
   <div class="container">
-<center><h4>Mayor</h4><img class="image" src="https://www.greenbelt.org/wp-content/uploads/2015/04/sam-liccardo.jpg" height=300>
+<img class="image" src="https://www.greenbelt.org/wp-content/uploads/2015/04/sam-liccardo.jpg" height=300>
     <div class="overlay">
-      <div class="text"><h4>SAM LICCARDO</h4> <h5>Phone:(408) 535Ͳ4800</h5> </div>
+      <div class="text"><h4>Sam Liccardo</h4></div>
     </div>
   </div>
 
 
 <div class="row">
-   <div class="column">
-     <h4>Council District 1</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/CharlesJonesSanJose.jpg" style="width=100%">
+   <div class="container" class="column">
+     <h4>Council District 1</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/CharlesJonesSanJose.jpg" style="width=100%">
+     <div class="overlay">
+       <div class="text"><h4>Charles "Chappie" Jones</h4></div>
+     </div>
    </div>
-   <div class="column">
-    <h4>Council District 2</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Sergio_Jimenez.png" style="width=100%">
+   <div class="container" class="column">
+    <h4>Council District 2</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Sergio_Jimenez.png" style="width=100%">
+    <div class="overlay">
+      <div class="text"><h4>Sergio Jimenez</h4></div>
     </div>
-    <div class="column">
-      <h4>Council District 3</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Raul_Peralez.jpg" style="width=100%">
     </div>
-    <div class="column">
-      <h4>Council District 4</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Lan_Diep_Official.png" style="width=100%">
+    <div class="container" class="column">
+      <h4>Council District 3</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Raul_Peralez.jpg" style="width=100%">
+      <div class="overlay">
+        <div class="text"><h4>Raul Peralez</h4></div>
+      </div>
     </div>
-    <div class="column">
-      <h4>Council District 5</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/MagdalenaCarrasco.jpg" style="width=100%">
+    <div class="container" class="column">
+      <h4>Council District 4</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Lan_Diep_Official.png" style="width=100%">
+      <div class="overlay">
+        <div class="text"><h4>Lan Diep</h4></div>
+      </div>
     </div>
-    <div class="column">
-      <h4>Council District 6</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Devora_Davis_Official.png" style="width=100%">
+    <div class="container" class="column">
+      <h4>Council District 5</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/MagdalenaCarrasco.jpg" style="width=100%">
+      <div class="overlay">
+        <div class="text"><h4>Magdalena Carrasco</h4></div>
+      </div>
     </div>
-    <div class="column">
-      <h4>Council District 7</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Maya_Esparza.jpg" style="width=100%">
+    <div class="container" class="column">
+      <h4>Council District 6</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Devora_Davis_Official.png" style="width=100%">
+      <div class="overlay">
+        <div class="text"><h4>Devora "Dev" Davis</h4></div>
+      </div>
     </div>
-    <div class="column">
-      <h4>Council District 8</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Sylvia_Arenas_Official.png" style="width=100%">
+    <div class="container" class="column">
+      <h4>Council District 7</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Maya_Esparza.jpg" style="width=100%">
+      <div class="overlay">
+        <div class="text"><h4>Maya Esparza</h4></div>
+      </div>
     </div>
-    <div class="column">
-      <h4>Council District 9</h4><img src="http://www.sanjoseca.gov/images/pages/N155/Foley_Pam_web.jpg" height=300>
+    <div class="container" class="column">
+      <h4>Council District 8</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Sylvia_Arenas_Official.png" style="width=100%">
+      <div class="overlay">
+        <div class="text"><h4>Sylvia Arenas</h4></div>
+      </div>
+    </div>
+    <div class="container" class="column">
+      <h4>Council District 9</h4><img class="image" src="http://www.sanjoseca.gov/images/pages/N155/Foley_Pam_web.jpg" height=300>
+      <div class="overlay">
+        <div class="text"><h4>Pam Foley</h4></div>
+      </div>
     </div>
     <p>&nbsp;</p>
-      <h4>Council District 10</h4><img src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/JohnKhamis12.jpeg" style="width=100%">
+    <div class="container"><h4>Council District 10</h4><img class="image" src="https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/JohnKhamis12.jpeg" style="width=100%">
+      <div class="overlay">
+        <div class="text"><h4>Johnny Kharmis</h4></div>
+      </div>
+    </div>
 </div>
 </body>
 </html>
