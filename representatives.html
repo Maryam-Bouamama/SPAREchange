@@ -4,17 +4,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-
 .container {
-    position: relative;
+  position: relative;
   width: 50%;
 }
+
 .image {
   display: block;
+  width: 100%;
+  height: auto;
 }
+
 .overlay {
   position: absolute;
-  margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
@@ -23,13 +25,15 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #f3fa8c;
+  background-color: #008CBA;
 }
+
 .container:hover .overlay {
   opacity: 1;
 }
+
 .text {
-  color: black;
+  color: white;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -39,6 +43,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+  
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
