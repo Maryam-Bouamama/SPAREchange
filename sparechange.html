@@ -7,17 +7,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap" rel="stylesheet">
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-		
+
 
   <style>
 	  mark{
 background-color:white;
 	}
-	
+
     .parallax {
       /* The image used */
       background-image: url("https://www.unicef.org/sites/default/files/styles/media_banner/public/2018-02/01_HP_UNI158415_Bluewash_WEB.jpg?itok=PU_hg3j5");
@@ -26,10 +25,10 @@ background-color:white;
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
       background-position: center;
-      background-size: cover;   
+      background-size: cover;
     }
-	  
-body/*h1,h2,h3,h4,h5,h6*/ {font-family: "Raleway", sans-serif}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   body, html {
     height: 100%;
     line-height: 1.8;
@@ -40,16 +39,37 @@ body/*h1,h2,h3,h4,h5,h6*/ {font-family: "Raleway", sans-serif}
     background-size: cover;
     background-image: url("https://www.unicef.org/sites/default/files/styles/media_banner/public/2018-02/01_HP_UNI158415_Bluewash_WEB.jpg?itok=PU_hg3j5");
     min-height: 100%;
-	  
+
   }
   .w3-bar .w3-button {
     padding: 16px;
   }
+  .column {
+    float: right;
+    width: 75%;
+    padding: 10px;
+    transform:  translate(0%, -100%);
+
+  }
+
+  .column2 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+  .column img {
+    margin-top: 12px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   </style>
 <style>
-	h1{
-		font-family: 'Comfortaa', cursive;
-	}
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -109,7 +129,7 @@ body {
 		text-shadow: 2px 2px #8D918D;
 	}
 </style>
-	  
+
 <section>
 <div class="buttoncontainer">
 <a href="#Animals"><div id="ANIMALS" class="take_meals_opt hover">ANIMALS</div></a>
@@ -142,7 +162,7 @@ body {
 	border-bottom:1px solid #343434;
 	transition: all 0.4s ease-in-out;
   float: left;
-}   
+}
 	.take_meals_opt.hover:hover{
     opacity: 0.3;
   filter: alpha(opacity=30);
@@ -200,96 +220,130 @@ body {
   </div>
 </section>
 	</div>
-	  
-	<div style="background-color:white;font-size:36px">
-  <h1 align= "center"> Animals</h1>
+  <br>
+  </br>
+  <br>
 </br>
-  <a href="https://www.aspca.org/" target="_blank"><img style="float: left"; id="Animals"; src= "https://www.greatriverrescue.com/wp-content/uploads/2017/08/aspca-720x340.jpg"; class="aspca"; ></a>
-  <p>ASPCA: The American Society for the Prevention of Cruelty to Animals, also known as the ASPCA, leads the nation in putting an end to animal abuse. Donating would help ASPCA fight against cruelty and would give animals around the world a second chance.
+	<div style="background-color:white;font-size:20px">
+  <h1 align= "center" class="column"> Animals</h1>
+
+
+
+  <a class="column2" href="https://www.aspca.org/" target="_blank"><img style="float: left"; id="Animals"; src= "https://www.greatriverrescue.com/wp-content/uploads/2017/08/aspca-720x340.jpg"; class="aspca"; ></a>
+  <p class="column">ASPCA: The American Society for the Prevention of Cruelty to Animals, also known as the ASPCA, leads the nation in putting an end to animal abuse. Donating would help ASPCA fight against cruelty and would give animals around the world a second chance.
 </p>
 </br>
   <hr width="98%">
 </br>
-<a href="https://www.awf.org/" target="_blank"><img style="float: left"; src= "https://secure.awf.org/files/awf/upload/AWF-logo-brown.png"; class="awf";></a>
-<p>AWF: The African Wildlife Foundation works tirelessly to protect over 80 threatened and endangered animals in Africa. Donations are used to fund conservation programs that ensure protection for the wildlife and environments in Africa.
+<a class="column2"href="https://www.awf.org/" target="_blank"><img style="float: left"; src= "https://secure.awf.org/files/awf/upload/AWF-logo-brown.png"; class="awf";></a>
+<p class="column">AWF: The African Wildlife Foundation works tirelessly to protect over 80 threatened and endangered animals in Africa. Donations are used to fund conservation programs that ensure protection for the wildlife and environments in Africa.
 </p>
 </br>
-    </br>
-      <h1 id="Health"; align= "center"> Health</h1>
+<br>
 </br>
-<a href="https://www.gainhealth.org/" target="_blank"><img style="float: left"; src= "https://www.gainhealth.org/wp-content/uploads/2014/02/GAIN-logo-transparent-background.png"; class="gain";></a>
-  <p>
+<br>
+<center>
+      <h1 id="Health"; align= "center" class="column"> Health</h1>
+    </center>
+    <br>
+    </br>
+<a class="column2"href="https://www.gainhealth.org/" target="_blank"><img style="float: left"; src= "https://www.gainhealth.org/wp-content/uploads/2014/02/GAIN-logo-transparent-background.png"; class="gain";></a>
+<br>
+
+</br>
+  <p class="column">
 GAIN: The Global Alliance for Improved Nutrition gives over a billion people more access to affordable and nutritious food. With their donations, they can reach even more people that face malnutrition around the world.
 </p>
 </br>
-<hr width="98%">
-    </br>
-    <a href="https://www.redcross.org/" target="_blank"><img style="float: left"; src= "http://pluspng.com/img-png/american-red-cross-logo-png-red-cross-logo-arc-png-free-downloads-logo-brand-emblems-2506.png"; class="redcross";></a>
-   <p>
+    <a class="column2" href="https://www.redcross.org/" target="_blank"><img style="float: left"; src= "http://pluspng.com/img-png/american-red-cross-logo-png-red-cross-logo-arc-png-free-downloads-logo-brand-emblems-2506.png"; class="redcross";></a>
+   <p class ="column">
 Red Cross: The Red Cross focuses on supporting urgent humanitarian needs and disasters big and small. Donations can go to disaster relief, where it is needed most (urgent humanitarian needs), your local Red Cross, and home fires.
 </p>
+    <h1 id="Environment"; align= "center" class="column"> Environmental</h1>
 </br>
+<hr width="98%">
+<br>
 </br>
-    <h1 id="Environment"; align= "center"> Environmental</h1>
+<br>
 </br>
-    <a href="https://www.wcs.org/" target="_blank"><img style="float: left"; src= "https://upload.wikimedia.org/wikipedia/commons/f/fd/Wildlife_cs_logo15.png"; class="wcs";></a>
-     <p>
+    <a class="column2" href="https://www.wcs.org/" target="_blank"><img style="float: left"; src= "https://upload.wikimedia.org/wikipedia/commons/f/fd/Wildlife_cs_logo15.png"; class="wcs";></a>
+     <p class="column">
 WCS: The Wildlife Conservation Society raises money and provides services to support conservation experts focus on saving wildlife. Donations can be designated towards specific species and 100% will go straight to your field of choice.
 </p>
 </br>
 <hr width="98%">
     </br>
-    <a href="https://www.edf.org/" target="_blank"><img style="float: left"; src= "https://media.featuredcustomers.com/Company.logo/edaf_logo.png"; class="edf";></a>
-   <p>
+    <a class="column2" href="https://www.edf.org/" target="_blank"><img style="float: left"; src= "https://media.featuredcustomers.com/Company.logo/edaf_logo.png"; class="edf";></a>
+   <p class="column">
 EDF: The Environmental Defense Fund takes action to rewrite the planet’s current trajectory involving climate change and the environmental state. Donations go towards the preservation of natural systems around the world.
 </p>
 </br>
 </br>
-    <h1 id="Education"; align= "center"> Education</h1>
+    <h1 id="Education"; align= "center" class="column"> Education</h1>
 </br>
-    <a href="https://www.khanacademy.org/" target="_blank"><img style="float: left"; src= "https://66.media.tumblr.com/f1bd3cd7e4b20dba634393462326859b/tumblr_inline_pcdui455cU1r8ovh1_540.png"; class="khan";></a>
-      <p>
+
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+    <a class="column2" href="https://www.khanacademy.org/" target="_blank"><img style="float: left"; src= "https://66.media.tumblr.com/f1bd3cd7e4b20dba634393462326859b/tumblr_inline_pcdui455cU1r8ovh1_540.png"; class="khan";></a>
+      <p class="column">
 Khan Academy: Khan Academy provides free education accessible to people around the world. As a non-profit organization, Khan Academy relies on donations to be able to keep its educational program free for any user.
 </p>
 </br>
 <hr width="98%">
     </br>
-    <a href="https://girlswhocode.com/summer-immersion-programs/" target="_blank"><img style="float: left"; src= "https://m1.fluidreview.com/media/assets/reviewrooms/gwc-test/favicon.ico"; class="gwc";></a>
-   <p>
+    <a class="column2" href="https://girlswhocode.com/summer-immersion-programs/" target="_blank"><img style="float: left"; src= "https://m1.fluidreview.com/media/assets/reviewrooms/gwc-test/favicon.ico"; class="gwc";></a>
+   <p class="column">
 GWC SIP: The Girls Who Code Summer Immersion Program equips girls with the opportunity to pursue careers in tech. Donations allow more girls to have access to free education in the computer science program to close the gender gap in the tech field.
 </p>
 </br>
 </br>
-    <h1 id="Art & Culture"; align= "center"> Arts and Culture</h1>
+    <h1 id="Art & Culture"; align= "center" class="column"> Arts and Culture</h1>
 </br>
-    <a href="https://creative-capital.org/" target="_blank"><img style="float: left"; src= "https://www.leeway.org/images/blog/4029/creative_capital_black_logo__large.jpg"; class="creativecap";></a>
-    <p>
+<br>
+</br>
+<br>
+<hr width="98%">
+</br>
+<br>
+</br>
+    <a class="column2" href="https://creative-capital.org/" target="_blank"><img style="float: left"; src= "https://www.leeway.org/images/blog/4029/creative_capital_black_logo__large.jpg"; class="creativecap";></a>
+    <p class ="column">
 Creative Capital: Creative Capital provides funding, counsel gatherings, and career development services to support artists across the country. Through donations, they are able to give artists the ability to build sustainable practices.
 </p>
 </br>
-<hr width="98%">
     </br>
-    <a href="https://www.theartofelysium.org/" target="_blank"><img style="float: left"; src= "https://s3-us-west-1.amazonaws.com/cr-rackspace-cloud-files-backups/Prod_Large/artofelysium589cca84de501.png?5d1e01c954112"; class="art";></a>
-    <p>
+    <a class="column2" href="https://www.theartofelysium.org/" target="_blank"><img style="float: left"; src= "https://s3-us-west-1.amazonaws.com/cr-rackspace-cloud-files-backups/Prod_Large/artofelysium589cca84de501.png?5d1e01c954112"; class="art";></a>
+    <p class="column">
 The Art of Elysium: The Art of Elysium Organization works to empower artists and communities to join together and share their gifts. With donations, they are able to aid the art services of community artists, giving back to the “artists who share their gifts with those in need”.
 </p>
 </br>
 </br>
-    <h1 id="International NGOS"; align= "center"> International NGO's</h1>
+    <h1 id="International NGOS"; align= "center" class="column"> International NGO's</h1>
 </br>
-    <a href="https://www.givelight.org/" target="_blank"><img style="float: left"; src= "https://www.feelingblessed.org/images/org/logo/2018-02-02-18-49-42-hG4TsD.png"; class="givelight";></a>
-     <p>
-Givelight: The mission of Givelight is to build homes and futures for the orphans in areas affected by natural disasters, poverty, and war. Donations can provide warm meals, pay for tutors, and sponsor orphan children in need. 
+<br>
+</br>
+<br>
+<hr width="98%">
+</br>
+
+    <a class="column2" href="https://www.givelight.org/" target="_blank"><img style="float: left"; src= "https://www.feelingblessed.org/images/org/logo/2018-02-02-18-49-42-hG4TsD.png"; class="givelight";></a>
+
+     <p class="column">
+Givelight: The mission of Givelight is to build homes and futures for the orphans in areas affected by natural disasters, poverty, and war. Donations can provide warm meals, pay for tutors, and sponsor orphan children in need.
 </p>
 </br>
-<hr width="98%">
     </br>
-  <a href="https://www.unicef.org/" target="_blank"><img style="float: left"; src= "https://www.unicef.org/georgia/sites/unicef.org.georgia/files/styles/press_release_feature/public/unicef-for-every-child-logo.png?itok=SmnazCaN"; class="unicef";></a>
-    <p>
-Unicef: Unicef supports child refugees and helps to give them the childhood that they deserve. Donations can help those desperately in need of nutrition, water, and medical supplies. 
+  <a class="column2" href="https://www.unicef.org/" target="_blank"><img style="float: left"; src= "https://www.unicef.org/georgia/sites/unicef.org.georgia/files/styles/press_release_feature/public/unicef-for-every-child-logo.png?itok=SmnazCaN"; class="unicef";></a>
+    <p class="column">
+Unicef: Unicef supports child refugees and helps to give them the childhood that they deserve. Donations can help those desperately in need of nutrition, water, and medical supplies.
 </p>
 </br>
-<hr width="98%">
+
+
     <style>
     .unicef{
       border-radius: 8px;
