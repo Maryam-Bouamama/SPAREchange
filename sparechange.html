@@ -107,9 +107,9 @@ body {
 	  
 <section>
 <div class="buttoncontainer">
-<a href="#Animals"><div id="ANIMALS" class="take_meals_opt">ANIMALS</div></a>
-<a href="#Health"><div id="HEALTH" class="take_meals_opt">HEALTH</div></a>
-<a href="#Environment"><div id="ENVIRONMENT" class="take_meals_opt">ENVIRONMENT</div></a>
+<a href="#Animals"><div id="ANIMALS" class="take_meals_opt hover">ANIMALS</div></a>
+<a href="#Health"><div id="HEALTH" class="take_meals_opt hover">HEALTH</div></a>
+<a href="#Environment"><div id="ENVIRONMENT" class="take_meals_opt hover">ENVIRONMENT</div></a>
 </div>
 
 <div class="clear"></div>
@@ -137,6 +137,11 @@ body {
 	transition: all 0.4s ease-in-out;
   float: left;
 }   
+	.take_meals_opt.hover:hover{
+    opacity: 0.3;
+  filter: alpha(opacity=30);
+    transition-duration: 0.6s;
+  }
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
 </style>
           <div class="w3-row">
