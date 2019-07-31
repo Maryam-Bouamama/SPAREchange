@@ -57,6 +57,17 @@ header {
   background-size: cover;
 width: 100%;
 }
+    
+    .lang {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://gt20.org/wp-content/uploads/2016/09/volunteer.png);
+  background-size: cover;
+width: 100%;
+}
 .title {
   position: absolute;
   top: 50%;
@@ -303,13 +314,13 @@ img {vertical-align: middle;}
 
 <div class="w3-container">
 <header>
-  <div style="padding-right:16px">
+  <div class="title">
+    <div class="lang" style="padding-right:16px">
     <select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);" name="Select Language" class="selection">
 <option>English</option>
 <option value="indexSpanish.html">Español</option>
 </select> 
   </div>
-  <div class="title">
   <h1 class="h1">SpareChangeTS</h1>
   <p class="p">Change the World!</p>
   </div>
