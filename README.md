@@ -1,3 +1,2 @@
 # SPAREchange
-GWC Final Project :D
-hello
+GWC Final Project 
